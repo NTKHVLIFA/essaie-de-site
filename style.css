@@ -6,7 +6,16 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+@media (max-width: 768px) {
+    /* Styles à appliquer lorsque la largeur de l'écran est de 768 pixels ou moins */
+    .header .nav {
+        flex-direction: column;
+    }
+    
+    .header .nav a {
+        margin: 10px 0;
+    }
+}
 .header {
     position: fixed;
     width: 100%;
